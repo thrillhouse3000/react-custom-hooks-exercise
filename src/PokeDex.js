@@ -8,13 +8,6 @@ let url = 'https://pokeapi.co/api/v2/pokemon/'
  * Can also add a new card at random,
  * or from a dropdown of available pokemon. */
 function PokeDex() {
-  // const [pokemon, setPokemon] = useState([]);
-  // const addPokemon = async name => {
-  //   const response = await axios.get(
-  //     `https://pokeapi.co/api/v2/pokemon/${name}/`
-  //   );
-  //   setPokemon(pokemon => [...pokemon, { ...response.data, id: uuid() }]);
-  // };
   const [pokemon, setPokemon] = useAxios(url)
   return (
     <div className="PokeDex">
